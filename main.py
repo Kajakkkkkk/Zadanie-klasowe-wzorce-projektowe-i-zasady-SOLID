@@ -54,6 +54,7 @@ class WithSummaryStatisticsLogger(StatisticsLogger):
 
     def get_execution_times(self) -> list[float]:
         return self._logger.get_execution_times()
+        
 def client_code_object_decorators():
     base_logger = ExecutionTimesBaseStatistics([3.5, 4.8, 2.1, 5.9])
     mean_logger = WithMeanStatisticsLogger(base_logger)
